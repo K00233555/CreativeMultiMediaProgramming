@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang = en>
     
-    <head>
+      <head>
         
         <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-115764311-1"></script>
@@ -22,15 +22,179 @@
         <link rel="stylesheet" href="css/styles.css">
     </head>
 <body>
-<header class = "pageHeader">
-<h1>HIGHER DIPLOMA IN CREATIVE MULTIMEDIA PROGRAMMING In Limerick Institute of Technology- 2018</h1> 
-  </header>  
-    <!-- The Creative Multimedia in Programming page is here -->
+    
+<div class = "overallPage">
+    <div class = "contentsPage">
+        <header class = "pageheader">
+    <div class = "headerLogo">
+        <img src = "img/OTR.JPG" alt = "OTR logo">
+        </div>
+        
+    <div class = "websiteLogo">
+         <img src = "img/OffTheRecord.JPG" alt = "Off the Record Text Logo">
+        
+        </div>
+        
+        <div class= "searchInput">
+        
+        <form style="text-align: right">
+         <p><input type="text" name="search" placeholder="Search.."></p>
+        </form>
+  
+        </div>
+
+     </header>
+<div class="dropdown">
+<button onclick="myFunction()" class="dropbtn">Menu </button>
+  <div id="myDropdown" class="dropdown-content">
+    <a href="index.html">Home</a>
+    <a href="aboutUs.html">About Us</a>
+    <a href="reviewsListing.html">Reviews</a>
+      <a href="news.html">News</a>
+      <a href="signinsignup.html">Sign in / Sign Up</a>
+      <a href="contactUs.html">Contact Us</a>
+  </div>
+    
+</div>
+    <div class = "topadvert"> <img src = "img/Advert.JPG" alt = "Kraftwerk Concert logo"></div>
+    <nav class = "menu">
+        <ul>
+      <li class = "currentPage">Home</li>
+      <li ><a href="aboutUs.html">About Us </a> </li>
+      <li><a href="reviewsListing.html">Reviews</a> </li> 
+    <li><a href="news.html">News</a> </li>         
+    </ul>
     
     
+    </nav>
+
+
+
+
+<div class= "mainArticle">
+
+    <div class = "albumArtist">David Bowie </div>
+    <div class = “albumTitle”> “Low”</div>
+    <div class = "author">Laura Snapes</div>
+    <div class = "genre"> Rock</div>
+    <div class = "albumPicReview">  <img src="img/Low.jpg" alt="Low Album Art" height="200" width="200"></div>
+     
+    <div class = "summary">So you want to start a career in coding or design, with the laest technologies. Well, read on ...
+    </div> 
+    
+   <p class = "mainArticleParagraph">
+   
+    </p> 
+    
+    <h2> Why LIT?</h2>
+    <p class = "mainArticleParagraph">
+   Advantages of LIT
+    </p> 
     
     
-<div>The Higher Diploma in <strong>CREATIVE MULTIMEDIA PROGRAMMING</strong> is a Higher Diploma course run by Limerick Institute of Technology (LIT)</div>
-    <p> Here is an update from the second version of the </p>
+     <p class = "mainArticleParagraph">
+         Paragraph 2
+   </p> 
+    
+    <h2> What are the core topics? </h2>
+  <p class = "mainArticleParagraph">
+ Paragraph 3
+    </p>         
+
+
+ </div> 
+<div class= "aboutUs">
+ <div class ="aboutUsTitle">About Us </div>
+    <p>Tired of reading lazy reviews from the same reviewers? </p>
+    <p>Well, here at OTR we want YOU to be the voice. You do the reviews, you get the rewards!</p>
+    <p>Interested? Find more information <a href ="aboutUs.html#join" target = "_blank"> here </a> </p>
+
+</div>
+<div class = "smallReviews">
+    
+    <div class = "albumSrImg1">
+     <a href = "spirit.html"  target="_blank"><img src = "img/spirit.jpg" class = "albumArtSr" alt = "spirit" ></a>
+    </div> 
+    <div class = "srAlbumTitle1"> 
+    <p class = "srArtist">
+        Depeche Mode
+        </p>
+        <p class = "srTitle">
+        Spirit
+        </p>
+    </div>
+
+    
+   
+    <div class = "albumSrImg2">
+     <a href = "honor.html" target="_blank"><img class = "albumArtSr" src = "img/Honor.jpg" alt = "Honour Found in Decay" ></a>
+    </div> 
+    <div class = "srAlbumTitle2"> 
+    <p class = "srArtist">
+        Neurosis
+        </p>
+        <p class = "srTitle">
+        Honor Found In Decay
+        </p>
+    
+ </div>
+    
+   
+    <div class = "albumSrImg3">
+     <a href = "hissspun.html" target="_blank"><img src = "img/HissSpun.jpg" class = "albumArtSr" alt = "HissSpun" ></a> 
+    </div> 
+    <div class = "srAlbumTitle3"> 
+    <p class = "srArtist">
+        Chelsea Wolfe
+        </p>
+        <p class = "srTitle">
+        Hiss Spun
+        </p>
+    </div>
+ 
+</div>
+    
+    <footer class = "pagefooter">
+    <div class ="contactDetails">
+        Limerick Institute of Technology <br> Moylish <br> Limerick <br> <a href= "www.lit.ie">www.lit.ie </a>
+        </div>
+        
+        <div class = "footerAdvert">
+        
+        <img src = "img/Advert.JPG" alt = "Kraftwerk Concert logo">
+        </div>
+        
+        
+        <div class = "footerIcon">
+        
+        <p> Copyright &copy; 2018 LIT</p> 
+        </div>
+        
+    </footer>
+    </div>
+    </div>
+    
+    <script>
+/* When the user clicks on the button, 
+toggle between hiding and showing the dropdown content */
+function myFunction() {
+    document.getElementById("myDropdown").classList.toggle("show");
+}
+
+// Close the dropdown if the user clicks outside of it
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')) {
+
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
+</script>
 </body>
 </html>
