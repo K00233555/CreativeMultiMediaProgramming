@@ -1,3 +1,18 @@
+
+
+.overallPage{
+    width: 1000px;
+    background-color: aliceblue;
+}
+
+.roundEdgeCentre
+{
+    
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 /* Media Query for 1200 px */ 
 @media only screen and (min-width: 1200px) {
 .contentsPage {
@@ -17,6 +32,10 @@
 }
  .dropbtn{
         display:none;
+    }
+    
+    .aboutUsText{
+        font-size: 17px;
     }
     
  
