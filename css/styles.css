@@ -1,7 +1,7 @@
 
 
 .overallPage{
-    width: 1000px;
+    width: 1200px;
     background-color: aliceblue;
 }
 
@@ -24,7 +24,7 @@
     grid-template-areas: 
         "h h h h h h h h h h h h" /* header */
         ". ta ta ta ta ta ta ta ta ta ta ."
-        "s . . m m m m m m . . ." /* Signin & menu */
+        ". . m m m m m m m m . ." /* Signin & menu */
         ". r r r r r r r r r a a" 
         ". r r r r r r r r r . ." 
         ". . sr sr sr sr sr sr sr sr sr sr"
@@ -34,13 +34,13 @@
         display:none;
     }
     
-    .aboutUsText{
+.aboutUsText{
         font-size: 17px;
     }
     
  
 .overallPage{
-    background-color: beige;
+    background-color: snow;
      margin: 0px auto;
 }
     
@@ -54,9 +54,9 @@
 
 .pageheader {
     grid-area: h; /* grid-area aligns to the grid-template-areas above */
-    background-color: black;
-    max-height: 80px;
-    min-height: 80px;
+    background-color: snow;
+    max-height: 100px;
+    min-height: 100px;
     display: flex;
     justify-content: space-between;  
 }
@@ -91,7 +91,7 @@
 
 .aboutUs > p
 {   display: flex;
-    align-content: center;
+    align-content: justify;
     
 }
 
@@ -125,7 +125,7 @@
     max-width: 120px;
 }
 
-    .reviewHeading{
+.reviewHeading{
         text-align: center;
         font-family: ard;
         color: red;
@@ -235,7 +235,7 @@
    
 
 .overallPage{
-    background-color: beige;
+    background-color: snow;
     margin: 5px auto;
 }
 
@@ -456,7 +456,7 @@
    
 
 .overallPage{
-    background-color: beige;
+    background-color: snow;
     margin: 5px auto;
 }
 
@@ -672,7 +672,7 @@
    
 
 .overallPage{
-    background-color: beige;
+    background-color: snow;
     margin: 0px auto;
 }
 
