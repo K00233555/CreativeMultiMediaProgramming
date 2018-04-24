@@ -1,7 +1,10 @@
-
+body{
+    
+    background-color: lightblue;
+}
 
 .overallPage{
-    width: 1200px;
+    width: 80%;
     background-color: aliceblue;
 }
 
@@ -20,14 +23,15 @@
     display: grid;
     grid-gap: 1px;
     grid-template-columns: repeat(10, 1fr); /* 4 columns, 1fr each */ 
-    grid-template-rows:  .25fr .25fr .25fr 1.5fr 2fr 1fr .75fr 1fr; /* Dimensions of rows */ 
+    grid-template-rows:  .25fr .25fr .25fr 1fr 1fr .5fr 1.25fr 1fr; /* Dimensions of rows */ 
     grid-template-areas: 
         "h h h h h h h h h h h h" /* header */
         ". ta ta ta ta ta ta ta ta ta ta ."
         ". . m m m m m m m m . ." /* Signin & menu */
+        ". r r r r r r r r r . ." 
         ". r r r r r r r r r a a" 
         ". r r r r r r r r r . ." 
-        ". . sr sr sr sr sr sr sr sr sr sr"
+        "f f f f f f f f f f f f"
         "f f f f f f f f f f f f"
 }
  .dropbtn{
@@ -154,6 +158,7 @@
 
 .mainArticle {
     grid-area: r;
+    height:auto;
     
    
 }
