@@ -3,6 +3,24 @@ body{
     background-color: lightblue;
 }
 
+p, li{
+    font-size: 22px;
+    font-family: sans-serif;
+    padding: 3px;    
+}
+
+.mainArticleParagraph, .summary{
+    font-size: 22px;
+    font-family: sans-serif;
+    padding: 3px;
+}
+
+legend
+{
+    font-size: 25px;
+    font-style: italic;
+}
+
 .overallPage{
     width: 80%;
     background-color: aliceblue;
@@ -23,12 +41,12 @@ body{
     display: grid;
     grid-gap: 1px;
     grid-template-columns: repeat(10, 1fr); /* 4 columns, 1fr each */ 
-    grid-template-rows:  .25fr .25fr .25fr 1fr 1fr .5fr 1.25fr 1fr; /* Dimensions of rows */ 
+    grid-template-rows:  .15fr .05fr .20fr .55fr .55fr .5fr .35fr .1fr; /* Dimensions of rows */ 
     grid-template-areas: 
         "h h h h h h h h h h h h" /* header */
         ". ta ta ta ta ta ta ta ta ta ta ."
         ". . m m m m m m m m . ." /* Signin & menu */
-        ". r r r r r r r r r . ." 
+        ". r r r r r r r r r a a" 
         ". r r r r r r r r r a a" 
         ". r r r r r r r r r . ." 
         "f f f f f f f f f f f f"
@@ -39,7 +57,7 @@ body{
     }
     
 .aboutUsText{
-        font-size: 17px;
+        font-size: 25px;
     }
     
  
