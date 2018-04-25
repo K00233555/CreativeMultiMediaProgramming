@@ -9,6 +9,15 @@ p, li{
     padding: 3px;    
 }
 
+h2, h3
+{
+    font-size: 25px;
+}
+.links img{
+    max-width: 100px;
+    max-height: 50px;
+}
+
 .mainArticleParagraph, .summary{
     font-size: 22px;
     font-family: sans-serif;
@@ -24,7 +33,13 @@ legend
 .overallPage{
     width: 80%;
     background-color: aliceblue;
+    padding: 10px;
 }
+
+  .footerAdvert
+    { height:auto;
+       
+    }
 
 .roundEdgeCentre
 {
@@ -34,8 +49,8 @@ legend
     margin-right: auto;
 }
 
-/* Media Query for 1200 px */ 
-@media only screen and (min-width: 1200px) {
+/* Media Query for 1224px - Desktop/ Laptop size */ 
+@media only screen and (min-width: 1224px) {
 .contentsPage {
     height: 80%;
     display: grid;
@@ -52,6 +67,8 @@ legend
         "f f f f f f f f f f f f"
         "f f f f f f f f f f f f"
 }
+    
+   
  .dropbtn{
         display:none;
     }
@@ -185,8 +202,8 @@ legend
     grid-area: f;
     background-color: white;
     color: red;
-    max-height: 100px;
-    min-height: 100px;
+   height:auto;
+    
     display: flex;
     justify-content: space-around; /* Crucial if we want on one line */
       
@@ -230,8 +247,8 @@ legend
 }
 }
 
-/* Media Query for 540 px */ 
-@media only screen and (max-width: 540px) {
+/* Media Query for x */ 
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px)  {
 .contentsPage {
     height: 80%;
     display: grid;
@@ -669,8 +686,8 @@ legend
 }
 }
 
-/* Media Query for 380 px */
-@media only screen and (max-width: 380px) {
+/* Media Query for standard Smartphone */
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px)  {
 .contentsPage {
     height: 80%;
     display: grid;
@@ -678,21 +695,26 @@ legend
     grid-template-columns: repeat(8, 1fr); /* 8 columns, 1fr each */ 
     grid-template-rows: .05fr .05fr .75fr .10fr; /* Dimensions of rows */ 
     grid-template-areas: 
-        "h h h h h h h h" 
+        "h h h h h h d d" 
         ". . . . . . d d"
         "r r r r r r r r"
         "sr sr sr sr sr sr sr sr"
         
        
 }
-    
+    .springBoardLogo
+    {
+        display:none;
+    }
     
     .dropdown{
         grid-area: d;
         display:contents;
     }
     
-   
+    .menu{
+        display: none;
+    }
 
 .overallPage{
     background-color: snow;
@@ -900,6 +922,7 @@ nav li {
     width:150px;
     height:180px;
     border:solid black 1px;
+    border-radius: 25px;
 }
 
 nav li.currentPage 
@@ -921,13 +944,15 @@ a:active
 
 
 .dropbtn {
-    background-color: aliceblue;
+    background-color: dodgerblue;
     color: black;
     font-family: ard;
     padding: 16px;
     font-size: 16px;
-    border: none;
+    border: 2px;
+    border-radius: 20px;
     cursor: pointer;
+    
 }
 
 .dropbtn:hover, .dropbtn:focus {
@@ -950,7 +975,7 @@ a:active
 }
 
 .dropdown-content a {
-    color: white;
+    color: dodgerblue;
     padding: 12px 16px;
     text-decoration:none;
     display: block;
