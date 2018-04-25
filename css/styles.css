@@ -57,7 +57,7 @@ legend
     }
     
 .aboutUsText{
-        font-size: 25px;
+        font-size: 20px;
     }
     
  
@@ -89,7 +89,7 @@ legend
 
 .aboutUs{
     grid-area: a;
-    border: double 5px;
+    border: double 3px;
     border-color: red;
     max-width: 250px;
 }
@@ -170,8 +170,8 @@ legend
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    max-height:10px;
-    min-height: 40px;
+    max-height:30%;
+    min-height: 25%;
 }
 
 .mainArticle {
