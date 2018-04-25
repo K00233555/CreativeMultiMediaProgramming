@@ -896,7 +896,7 @@ nav li {
     font-size: 160%;
     color: red;
     display:inline;
-    background-color:black;
+    background-color:white;
     width:150px;
     height:180px;
     border:solid black 1px;
@@ -905,7 +905,7 @@ nav li {
 nav li.currentPage 
 { 
     background-color:red;
-    color: black;
+    color: white;
 }
 
 
@@ -921,7 +921,7 @@ a:active
 
 
 .dropbtn {
-    background-color: red;
+    background-color: aliceblue;
     color: black;
     font-family: ard;
     padding: 16px;
