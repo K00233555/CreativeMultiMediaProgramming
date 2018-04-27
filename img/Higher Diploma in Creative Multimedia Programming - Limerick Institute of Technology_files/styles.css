@@ -3,12 +3,6 @@ body{
     background-color: lightblue;
 }
 
-
-legend{
-    font-size: 40px;
-}
-
-
 iframe{
     
     width: 80%;
@@ -30,7 +24,7 @@ h2, h3
 }
 .links img{
     max-width: 100px;
-    max-height: 100px;
+    max-height: 50px;
 }
 
 .mainArticleParagraph, .summary{
@@ -52,99 +46,18 @@ legend
     padding: 10px;
 }
 
- 
+  .footerAdvert
+    { height:auto;
+       
+    }
 
-
-
-.otrText{
-    font-family: ard;
-    font-size: 130%;
-    color: red;
-}
-nav li {
-    list-style-type: none;
-    margin: 1px;
-    padding: 2px;
-    text-align: center;
-    font-size: 160%;
-    color: red;
-    display:inline;
-    background-color:white;
-    width:150px;
-    height:180px;
-    border:solid black 1px;
-    border-radius: 25px;
-}
-
-nav li.currentPage 
-{ 
-    background-color:red;
-    color: white;
-}
-
-img 
+.roundEdgeCentre
 {
-    max-width: 75%;
-}
-
-legend img{
-    width: 200px;
-    height: 150px;
-}
-
-a:link 
-{ color:crimson;}
-a:visited 
-{ color:forestgreen;}
-a:hover 
-{ color:orange;}
-a:active 
-{ color:white;}
-
-
-.dropbtn {
-    background-color: dodgerblue;
-    color: black;
-    font-family: ard;
-    padding: 16px;
-    font-size: 16px;
-    border: 2px;
-    border-radius: 20px;
-    cursor: pointer;
     
-}
-
-.dropbtn:hover, .dropbtn:focus {
-    background-color: #2980B9;
-}
-
-.dropdown {
-    position: relative;
-    display: inline-block;
-}
-
-.dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: black;
-    min-width: 160px;
-    overflow: auto;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
-}
-
-.dropdown-content a {
-    color: dodgerblue;
-    padding: 12px 16px;
-    text-decoration:none;
     display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
-
-.dropdown a:hover {background-color: lightblue;
-text-decoration:underline;}
-
-.show {display:block;}
-
 
 /* Media Query for 1224px - Desktop/ Laptop size */ 
 @media only screen and (min-width: 1224px) {
@@ -165,7 +78,6 @@ text-decoration:underline;}
         "f f f f f f f f f f f f"
 }
     
- 
    
  .dropbtn{
         display:none;
@@ -181,7 +93,9 @@ text-decoration:underline;}
      margin: 0px auto;
 }
     
-  
+    .headerLogo{
+    display: contents;
+}
     
     .searchInput{
         display:contents;
@@ -226,14 +140,14 @@ text-decoration:underline;}
 
 .aboutUs > p
 {   display: flex;
-    align-content: flex-start;
+    align-content: justify;
     
 }
 
 .topad{
     grid-area:t;
-    max-height:50%;
-    max-width:50%;
+    max-height:auto;
+    max-width:auto;
 }
 
 .signIn{
@@ -316,7 +230,7 @@ text-decoration:underline;}
     {
         
     font-size: 125%;
-    font-family: "Times New Roman", Times, serif;
+    font-family: "Times New Roman" Times serif;
     }
 
 
@@ -343,8 +257,8 @@ text-decoration:underline;}
 }
 }
 
-/*3. Media Query for 768-1223 */
-@media only screen and (min-width : 768px) and (max-width: 1223px){
+
+@media only screen and (min-device-width : 768px){
 .contentsPage {
     height: 80%;
     display: grid;
@@ -362,101 +276,10 @@ text-decoration:underline;}
 }
     
     
- 
-   
-    
-
-    
-
-    .topadvert > img{
-        max-height: 400px;
-        max-width: 450px;
-    }
-
-    .aboutUs{
-        display:none;
-    }
-
-
-    
-
-
-
-.review {
-    grid-area: r;
-    min-width: 300px
-    
-   
-}
-
-.pagefooter {
-    grid-area: f;
-    background-color: black;
-    max-height: 20px;
-    min-height: 20px;
-    display: flex;
-    justify-content: flex-start; /* Crucial if we want on one line */
-      
-}
-  
-    
-   
-  
-     .signIn, .headerLogo{
-        display:none;
-    }
- 
-
-
-
-.mainArticleParagraph
-{
-  text-align: justify;  
-    
-}
-
-.author
-{
-    font-size: 105%;
-    
-}
-
-    
-    .albumArtSr{
-        max-height: 60px;
-        max-width: 60px;
-    }
-  
-
-
-}
-
-/* 2. Media Query for 401-767 px */
-@media only screen and (min-width: 501px) and (max-width: 767px) {
-.contentsPage {
-    height: 100%;
-    display: grid;
-    grid-gap: 1px;
-    grid-template-columns: repeat(8, 1fr); /* 8 columns, 1fr each */ 
-    grid-template-rows: .05fr .05fr .05fr .5fr .05fr; /* Dimensions of rows */ 
-    grid-template-areas: 
-        "h h h h h h h h" 
-       "d d . . . . . . "
-        "d d . . . . . ."
-        "r r r r r r r r"
-        "f f f f f f f f"
-        
-       
-}
-     .menu{
-        display: none;
-    }
-    
-    
     .dropdown{
         grid-area: d;
         display:contents;
-                
+        
     }
     
    
@@ -468,19 +291,25 @@ text-decoration:underline;}
 
 .pageheader {
     grid-area: h; /* grid-area aligns to the grid-template-areas above */
-    background-color: snow;
-    height: 30px;
+    background-color: black;
+ 
     display: flex;
     justify-content: flex-start;  
 }
     
    
     
-
-    
- 
-.topadvert{
+.headerLogo{
     display: none;
+    
+}
+    
+    .searchInput{
+        background-color: black
+    }
+
+.topadvert{
+    grid-area:ta;
     
 }
 
@@ -488,7 +317,12 @@ text-decoration:underline;}
         max-height: 400px;
         max-width: 450px;
     }
-
+.aboutUs{
+    grid-area: a;
+    border: double 5px;
+    border-color: red;
+    max-width: 250px;
+}
 
 @font-face{
     font-family: ard;
@@ -498,21 +332,42 @@ text-decoration:underline;}
     .aboutUs{
         display:none;
     }
+.aboutUs > div
+{
+   
+    text-align: center;
+    font-family: "ard";
+    color: red;
+    font-size: 200%;
+    
+    
+}
 
+.aboutUs > p
+{   display: flex;
+    align-content: center;
+    
+}
 
 .topad{
-    display: none;
+    grid-area:t;
+    max-height:auto;
+    max-width:auto;
 }
 
 .signIn{
-   display: none;
+   grid-area: s;
+    display: flex;
+    text-align: center;
+    flex-direction: column;  /* make main axis vertical */
  
     
 }
     
 .smallReviews{
     grid-area: sr;
-     display: none; 
+     display: flex;
+     justify-content:space-between; 
 }
 
 .albumArtSr
@@ -544,8 +399,8 @@ text-decoration:underline;}
 
 .pagefooter {
     grid-area: f;
-    background-color: white;
-    max-height: 200px;
+    background-color: black;
+    max-height: 20px;
     min-height: 20px;
     display: flex;
     justify-content: flex-start; /* Crucial if we want on one line */
@@ -553,7 +408,225 @@ text-decoration:underline;}
 }
   
     
+    .headerLogo{
+        display:none;
+    }
+    .footerIcon{
+        display:none;
+    }
+     .signIn, .headerLogo{
+        display:none;
+    }
+  .footerAdvert
+    { display:none;
+       
+    }
+
+
+
+.mainArticleParagraph
+{
+  text-align: justify;  
+    
+}
+.albumArtist
+    {
+        
+    font-size: 105%;
+    font-family: "Times New Roman" Times serif;
+    }
+
+
+
+.author
+{
+    font-size: 105%;
+    
+}
+
+    
+    .albumArtSr{
+        max-height: 60px;
+        max-width: 60px;
+    }
+  
+
+    
+/*.albumSrImg3{
+ display: none;
+}
+    
+    
+.srAlbumTitle3
+ {
+  display: none;
+} */
+
+.summary
+{
+    font-style: italic;
+}
+
+.genre
+{
+    font-size: 90%;
+    font-family:sans-serif;
+    font: "Times New Roman";
+    
+}
+}
+
+/* 2. Media Query for 401-767 px */
+@media only screen and (min-width: 401px) and (max-width: 767px) {
+.contentsPage {
+    height: 80%;
+    display: grid;
+    grid-gap: 1px;
+    grid-template-columns: repeat(8, 1fr); /* 8 columns, 1fr each */ 
+    grid-template-rows: .05fr .05fr .05fr .75fr .10fr; /* Dimensions of rows */ 
+    grid-template-areas: 
+        "h h h h h h h h" 
+       "d d . . . . . . "
+        "ta ta ta ta ta ta ta ta"
+        "r r r r r r r r"
+        "sr sr sr sr sr sr sr sr"
+        
+       
+}
+    
+    
+    .dropdown{
+        grid-area: d;
+        display:contents;
+        
+    }
+    
    
+
+.overallPage{
+    background-color: snow;
+    margin: 5px auto;
+}
+
+.pageheader {
+    grid-area: h; /* grid-area aligns to the grid-template-areas above */
+    background-color: black;
+ 
+    display: flex;
+    justify-content: flex-start;  
+}
+    
+   
+    
+.headerLogo{
+    display: none;
+    
+}
+    
+    .searchInput{
+        background-color: black
+    }
+
+.topadvert{
+    grid-area:ta;
+    
+}
+
+    .topadvert > img{
+        max-height: 400px;
+        max-width: 450px;
+    }
+.aboutUs{
+    grid-area: a;
+    border: double 5px;
+    border-color: red;
+    max-width: 250px;
+}
+
+@font-face{
+    font-family: ard;
+    src:url(ard.ttf);
+ 
+}
+    .aboutUs{
+        display:none;
+    }
+.aboutUs > div
+{
+   
+    text-align: center;
+    font-family: "ard";
+    color: red;
+    font-size: 200%;
+    
+    
+}
+
+.aboutUs > p
+{   display: flex;
+    align-content: center;
+    
+}
+
+.topad{
+    grid-area:t;
+    max-height:auto;
+    max-width:auto;
+}
+
+.signIn{
+   display: none;
+ 
+    
+}
+    
+.smallReviews{
+    grid-area: sr;
+     display: flex;
+     justify-content:space-between; 
+}
+
+.albumArtSr
+{
+     max-height: 120px;
+    max-width: 120px;
+}
+
+.srArtist {
+    text-align: center;
+    font-style: italic;
+    font-size:110%;
+}
+
+.srTitle
+{ text-align: center;
+    font-family: ard;
+    color: red;
+    font-size: 125%;;
+}
+
+
+.review {
+    grid-area: r;
+    min-width: 300px
+    
+   
+}
+
+.pagefooter {
+    grid-area: f;
+    background-color: black;
+    max-height: 20px;
+    min-height: 20px;
+    display: flex;
+    justify-content: flex-start; /* Crucial if we want on one line */
+      
+}
+  
+    
+    .headerLogo{
+        display:none;
+    }
     .footerIcon{
         display:none;
     }
@@ -578,7 +651,7 @@ text-decoration:underline;}
     {
         
     font-size: 105%;
-    font-family: "Times New Roman", Times, serif;
+    font-family: "Times New Roman" Times serif;
     }
 
 
@@ -596,7 +669,16 @@ text-decoration:underline;}
     }
   
 
-
+    
+/*.albumSrImg3{
+ display: none;
+}
+    
+    
+.srAlbumTitle3
+ {
+  display: none;
+} */
 
 .summary
 {
@@ -613,13 +695,13 @@ text-decoration:underline;}
 }
 
 /* 1. Media Query for standard Smartphone */
-@media only screen and (min-device-width : 50px) and (max-width: 500px) {
+@media only screen and (min-device-width : 50px) and (max-width: 400px) {
 .contentsPage {
-    height: 100%;
+    height: 95%;
     display: grid;
-    grid-gap: 2px;
+    grid-gap: 1px;
     grid-template-columns: repeat(8, 1fr); /* 8 columns, 1fr each */ 
-    grid-template-rows: .025fr .05fr .35fr .20fr; /* Dimensions of rows */ 
+    grid-template-rows: .025fr .05fr .5fr .10fr; /* Dimensions of rows */ 
     grid-template-areas: 
         "d d h h h h h h" 
         "d d . . . . . ."
@@ -628,15 +710,12 @@ text-decoration:underline;}
         
        
 }
-    
-    .footerAdvert
+    .springBoardLogo
     {
-        display: contents;
+        
+        display: content;
+        width: 90px;
     }
-    .springBoardLogo{
-        display: none;
-    }
-    
    
     
     .dropdown{
@@ -644,7 +723,7 @@ text-decoration:underline;}
         display:contents;
     }
     
-    .menu {
+    .menu{
         display: none;
     }
 
@@ -659,7 +738,7 @@ text-decoration:underline;}
     max-height: 80px;
     min-height: 80px;
     display: flex;
-    justify-content:flex-start;  
+    justify-content: flex-start;  
 }
     
 
@@ -669,10 +748,15 @@ text-decoration:underline;}
     }
 
 .topadvert{
-    display: none;
+    grid-area:ta;
 }
 
-
+.aboutUs{
+    grid-area: a;
+    border: double 5px;
+    border-color: red;
+    max-width: 250px;
+}
 
 @font-face{
     font-family: ard;
@@ -682,17 +766,36 @@ text-decoration:underline;}
     .aboutUs{
         display:none;
     }
-
-
-
-
-.topad{
-    grid-area:t;
+.aboutUs > div
+{
+   
+    text-align: center;
+    font-family: "ard";
+    color: red;
+    font-size: 200%;
+    
     
 }
 
+.aboutUs > p
+{   display: flex;
+    align-content: center;
+    
+}
+
+.topad{
+    grid-area:t;
+    max-height:auto;
+    max-width:auto;
+}
+
 .signIn{
-   display: none;
+   grid-area: s;
+    display: flex;
+    text-align: center;
+    flex-direction: column;  /* make main axis vertical */
+ 
+    
 }
     
 .smallReviews{
@@ -752,7 +855,9 @@ text-decoration:underline;}
 .topadvert{
         display:none;
     }
-
+.menu{
+        display:none;
+    }
 
 .mainArticleParagraph
 {
@@ -763,7 +868,7 @@ text-decoration:underline;}
     {
         
     font-size: 105%;
-    font-family: "Times New Roman", Times, serif;
+    font-family: "Times New Roman" Times serif;
     }
 
 
@@ -780,9 +885,7 @@ text-decoration:underline;}
         max-width: 60px;
     }
   
-    .footerIcon{
-        display: contents;
-    }
+
     
 .albumSrImg3{
  display: none;
@@ -809,5 +912,93 @@ text-decoration:underline;}
 }
 
 
+.otrText{
+    font-family: ard;
+    font-size: 130%;
+    color: red;
+}
+nav li {
+    list-style-type: none;
+    margin: 1px;
+    padding: 2px;
+    text-align: center;
+    font-size: 160%;
+    color: red;
+    display:inline;
+    background-color:white;
+    width:150px;
+    height:180px;
+    border:solid black 1px;
+    border-radius: 25px;
+}
+
+nav li.currentPage 
+{ 
+    background-color:red;
+    color: white;
+}
+
+img 
+{
+    max-width: 200px;
+}
+
+fieldset img{
+    width: 100px;
+    height: 50px;
+}
+
+a:link 
+{ color:crimson;}
+a:visited 
+{ color:forestgreen;}
+a:hover 
+{ color:orange;}
+a:active 
+{ color:white;}
+
+
+.dropbtn {
+    background-color: dodgerblue;
+    color: black;
+    font-family: ard;
+    padding: 16px;
+    font-size: 16px;
+    border: 2px;
+    border-radius: 20px;
+    cursor: pointer;
+    
+}
+
+.dropbtn:hover, .dropbtn:focus {
+    background-color: #2980B9;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: black;
+    min-width: 160px;
+    overflow: auto;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: dodgerblue;
+    padding: 12px 16px;
+    text-decoration:none;
+    display: block;
+}
+
+.dropdown a:hover {background-color: lightblue;
+text-decoration:underline;}
+
+.show {display:block;}
 
 
